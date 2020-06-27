@@ -6,4 +6,10 @@
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
 @import 'bg';
+@import 'nav';
+@import 'global';
+@import 'footer';

@@ -1,0 +1,105 @@
+.bleu{
+    background-color: $blue;
+}
+.navbar{
+    padding: 0 !important;
+    height: 80px;
+    .container {
+        padding: 0;
+        height: 100%;
+    }
+    h1{
+        color: $blanc;
+    }
+    #navbarSupportedContent {
+        min-height: 65px;
+
+        .btn-connect {
+            transition: all .2s;
+        }
+
+        &.navbar-collapse.show {
+            display: flex;
+        }
+
+        &.navbar-collapse {
+            @media(max-width: 992px) {
+                flex-wrap: nowrap;
+                align-items: center;
+                flex-direction: column;
+                padding-bottom: 15px;
+
+                .menu-connect {
+                    padding: 0px 10px;
+                    justify-content: center;
+                }
+            }
+        }
+
+        .nav {
+            min-height: 65px;
+            display: flex;
+            justify-content: center;
+
+            a {
+                min-height: 65px;
+                flex: auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: all .2s;
+            }
+        }
+    }
+    .nav-link{
+        color: $blanc;
+        font-size: 20px;
+        font-weight: bold;
+        border-left: 2px solid $blanc;
+        text-transform: uppercase        
+    }
+    .collapse h1{
+        color: $blanc;
+    }
+    #logo-nav {
+        height: 50px;
+    }
+}
+
+.bars {
+    position: relative;
+    height: 25px;
+    width: 36px;
+    //@include flex-col-between-center;
+
+    &__line {
+        border-radius: 5px;
+        height: 3px;
+        width: 100%;
+        background-color: white;
+    }
+}
+
+.bars.open {
+    .bars__line {
+        position: absolute;
+        transition: transform 0.25s;
+    }
+
+    .bars--snd {
+        display: none;
+    }
+
+    .bars--first {
+        transform: rotate(45deg);
+        top: 50%;
+        transition: transform 0.5s;
+    }
+
+    .bars--last {
+        transform: rotate(-45deg);
+        top: 50%;
+        transition: transform 0.5s;
+
+    }
+}
